@@ -13,7 +13,14 @@ Publication: [Condition transfer between prestressed bridges using structural st
 - The comparison results show a max difference of 1.12% in the bridges' natural frequencies, a difference of 0.28% in their damping ratios, a minimum MAC of 0.923, and an Average MMSC value of 0.947.
 
 ## The code ##
-
+- dataset.py provides the loading the dataset
+- blocks.py provides the blocks used in generator and critic (DGCG model= 2 generators + 2 critics)
+- config.py provides the configurations used in the model training
+- critic.py provides the critic model
+- generator.py provides the generator model
+- metric.py provides the FID used in the training
+- train.py is the file for training the DGCG model and some visualization
+- utils.py is only used for gradient penalty used for the critics during the training
 
 
 
