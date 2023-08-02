@@ -22,6 +22,15 @@ Publication: [Condition transfer between prestressed bridges using structural st
 - train.py is the file for training the DGCG model and some visualization
 - utils.py is only used for gradient penalty used for the critics during the training
 
+## The dataset ##
+
+
+## The DGCG model ##
+
+The number of learnable model parameters DGCG model have is 53.7 million. The single DGCG network architecture is shown in the figure below, as there are two of the same networks due to the cycle-consistent adversarial training nature. For instance, one network is responsible for *State-H* to *State-D*, and the other is for *State-D* to *State-H*.
+
+![Picture2](https://github.com/furkan-luleci/Structural_State_Translation/assets/63553991/702a90d0-e0a9-48d8-ba0f-27388b519f3b)
+
 
 
 
