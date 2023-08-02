@@ -23,7 +23,12 @@ Publication: [Condition transfer between prestressed bridges using structural st
 - utils.py is only used for gradient penalty used for the critics during the training
 
 ## The dataset ##
+The dataset used in for the SST is created from numeric a bridge deck models as modeled and analyzed in the Finite Element Analysis (FEA) program. 
 
+- First, the bridge decks are modelled in the FEA program.
+- Then, they went through with Time History Analysis (THA) after Gaussian noise is applied.
+- Subsequently, the acceleration response signals are extracted from the virtual sensor channels of each bridge deck model, so as to form the respective dataset for each bridge state.
+The acceleration response signals are extracted from the virtual sensor channels of each bridge deck model for 1024 seconds and 256 Hz, so as to form the respective dataset for each bridge deck state. Each dataset consists of a 15-channel acceleration response signal. The datasets are denoted as *Dataset 1H*, *Dataset 1D*, *Dataset 2H*, and *Dataset 2D*, where the numbers (1 and 2) represent the bridge sequence and the letters (H and D) represent the state of the bridges, with H meaning "healthy" and D meaning "damaged".
 
 ## The DGCG model ##
 
