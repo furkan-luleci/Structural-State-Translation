@@ -12,6 +12,9 @@ Publication: [Condition transfer between prestressed bridges using structural st
 - Finally, the translated bridge states are evaluated by comparing them to the real states based on their modal parameters and Average MMSC (Mean Magnitude-Squared Coherence) values, showing that the translated states are remarkably similar to the real ones.
 - The comparison results show a max difference of 1.12% in the bridges' natural frequencies, a difference of 0.28% in their damping ratios, a minimum MAC of 0.923, and an Average MMSC value of 0.947.
 
+![Picture3](https://github.com/furkan-luleci/Structural-State-Translation/assets/63553991/a8ea70e4-b10b-4b5e-a10b-732ad87d27a8)
+
+
 ## The code ##
 - dataset.py provides the loading the dataset
 - blocks.py provides the blocks used in generator and critic (DGCG model)
@@ -32,16 +35,12 @@ The dataset used in for the SST is created from numeric a bridge deck models as 
 - *Bridge#1* is used for training, which are *Dataset 1H*, *Dataset 1D*.
 - *Bridge#2* is used for test, which are *Dataset 2H*, *Dataset 2D*.
 
-The train_4096_span1.rar folder includes the undamaged (a0) and damaged (a0) folders, where each folder includes 16-second acceleration response tensors (each tensor has 4096 data points) collected from undamaged and damaged conditions of *Bridge#1*. This folder is used for training.
+The train_4096_span1.rar folder includes the undamaged (a0) and damaged (a0) folders, where each folder has 16-second acceleration response tensors (each tensor has 4096 data points) collected from undamaged and damaged conditions of *Bridge#1*. This folder is used for training.
 
-The test_4096_span2.rar folder includes the undamaged (a0) and damaged (a0) folders, where each folder includes 16-second acceleration response tensors (each tensor has 4096 data points) collected from undamaged and damaged conditions of *Bridge#2*. This folder is used for testing.
+The test_4096_span2.rar folder includes the undamaged (a0) and damaged (a0) folders, where each folder has 16-second acceleration response tensors (each tensor has 4096 data points) collected from undamaged and damaged conditions of *Bridge#2*. This folder is used for testing.
 
 ## The DGCG model ##
 
 The number of learnable model parameters DGCG model have is 53.7 million. The single DGCG network architecture is shown in the figure below, as there are two of the same networks due to the cycle-consistent adversarial training nature. For instance, one network is responsible for *State-H* to *State-D*, and the other is for *State-D* to *State-H*.
 
 ![Picture2](https://github.com/furkan-luleci/Structural_State_Translation/assets/63553991/702a90d0-e0a9-48d8-ba0f-27388b519f3b)
-
-
-
-
