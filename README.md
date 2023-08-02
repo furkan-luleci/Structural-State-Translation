@@ -27,8 +27,12 @@ The dataset used in for the SST is created from numeric a bridge deck models as 
 
 - First, the bridge decks are modelled in the FEA program.
 - Then, they went through with Time History Analysis (THA) after Gaussian noise is applied.
-- Subsequently, the acceleration response signals are extracted from the virtual sensor channels of each bridge deck model, so as to form the respective dataset for each bridge state.
-The acceleration response signals are extracted from the virtual sensor channels of each bridge deck model for 1024 seconds and 256 Hz, so as to form the respective dataset for each bridge deck state. Each dataset consists of a 15-channel acceleration response signal. The datasets are denoted as *Dataset 1H*, *Dataset 1D*, *Dataset 2H*, and *Dataset 2D*, where the numbers (1 and 2) represent the bridge sequence and the letters (H and D) represent the state of the bridges, with H meaning "healthy" and D meaning "damaged".
+- Subsequently, the acceleration response signals are extracted from the virtual sensor channels placed on each bridge deck model, so as to form the respective acceleration response dataset for each bridge deck state (4 bridge deck state in total).
+- The acceleration response signals are extracted from the virtual sensor channels of each bridge deck model for 1024 seconds and 256 Hz, so as to form the respective dataset for each bridge deck state. Each dataset consists of a 15-channel acceleration response signal. The datasets are denoted as *Dataset 1H*, *Dataset 1D*, *Dataset 2H*, and *Dataset 2D*, where the numbers (1 and 2) represent the bridge sequence and the letters (H and D) represent the state of the bridges, with H meaning "healthy" and D meaning "damaged".
+- *Bridge#1* is used for training, which are *Dataset 1H*, *Dataset 1D*.
+- *Bridge#2* is used for test, which are *Dataset 2H*, *Dataset 2D*.
+
+  
 
 ## The DGCG model ##
 
