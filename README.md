@@ -1,4 +1,4 @@
-# Structural_State_Translation
+# Condition transfer between prestressed bridges using structural state translation for structural health monitoring
 
 This repository contains the codes and the dataset used to transfer the structural condition between two prestressed bridges using *Structural State Translation*, published in a AI in Civil Engineering by Springer. 
 
