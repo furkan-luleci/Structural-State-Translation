@@ -32,7 +32,9 @@ The dataset used in for the SST is created from numeric a bridge deck models as 
 - *Bridge#1* is used for training, which are *Dataset 1H*, *Dataset 1D*.
 - *Bridge#2* is used for test, which are *Dataset 2H*, *Dataset 2D*.
 
-  
+The train_4096_span1.rar folder includes the undamaged (a0) and damaged (a0) folders, where each folder includes 16-second acceleration response tensors (each tensor has 4096 data points) collected from undamaged and damaged conditions of *Bridge#1*. This folder is used for training.
+
+The test_4096_span2.rar folder includes the undamaged (a0) and damaged (a0) folders, where each folder includes 16-second acceleration response tensors (each tensor has 4096 data points) collected from undamaged and damaged conditions of *Bridge#2*. This folder is used for testing.
 
 ## The DGCG model ##
 
