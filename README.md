@@ -14,7 +14,7 @@ Publication: [Condition transfer between prestressed bridges using structural st
 
 ## The code ##
 - dataset.py provides the loading the dataset
-- blocks.py provides the blocks used in generator and critic (DGCG model= 2 generators + 2 critics)
+- blocks.py provides the blocks used in generator and critic (DGCG model)
 - config.py provides the configurations used in the model training
 - critic.py provides the critic model
 - generator.py provides the generator model
